@@ -1,11 +1,10 @@
 # ES654-assignment-3-akcgjc007
 
+## **Assignment 3 | Total Marks: 20 | Deadline: April 18, 11:59 PM**
+
 ## [Document](https://docs.google.com/document/d/1i3NWa2aViJuv8R1qAAC83mv1lXlX6gKA5QeU2IJ2uJY/edit)
 
 ## Problem statement
-Assignment 3
-Total Marks: 20
-Deadline: April 18, 11:59 PM
 
 Create your own repo and write code in a similar fashion as you did for earlier assignments. We are not providing any sample code this time. Any commits after the deadline will not be acceptable. 
 
@@ -32,8 +31,7 @@ If you have any questions, please ask them on MS Teams below this post. Please c
  - Digits dataset https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits
  - Breast cancer dataset https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html#sklearn.datasets.load_breast_cancer
  - Boston housing dataset https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston
+ - https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 
-
-
-
+## Developer notes
 
