@@ -13,7 +13,7 @@ class Unreg:
         negetive_cost = (1 - y) * np.log(1 - sigmoid(z))
         return -sum(positive_cost+negetive_cost) / len(X)
 
-    def fit(self, X, y, epochs=25, lr=0.05):
+    def fit(self, X, y, epochs=1000, lr=0.05):
         self.weights = rand(X.shape[1])
 
         for _ in range(epochs):
@@ -21,9 +21,13 @@ class Unreg:
             self.weights -= lr * np.dot(X.T,  y_hat - y) / len(X)
 
     def predict(self, X):
-        return [
-            1 if i > 0.5 else 0 
-            for i in sigmoid(
-                np.dot(X, self.weights)
-            )
-        ]
+        return [1 if i > 0.5 else 0 for i in sigmoid(np.dot(X, self.weights))]
+
+    def score(self, X, y):
+        y_hat = self.predict(X)
+        y = y.reset_index(drop=True)
+        p = 0
+        for i in range(len(y)):
+            if y[i] == y_hat[i]:
+                p += 1
+        return 100*p/len(y)
