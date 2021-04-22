@@ -1,4 +1,4 @@
 PY := python3
 
 1:
-	$(PY) q1.py
+	$(PY) -W ignore q1.py
