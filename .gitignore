@@ -3,6 +3,8 @@
 *.py[cod]
 *$py.class
 *.npy
+dataset_dogs_vs_cats
+
 # C extensions
 *.so
 
